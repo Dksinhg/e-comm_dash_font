@@ -1,0 +1,49 @@
+.Main_footer{
+    margin-top: 12%;
+    background-color: rgb(5, 14, 82);
+}
+.Main_footer h1{
+ 
+  padding: 10px;
+  color: white;
+}
+.footer{
+    background-color: rgb(5, 14, 82);
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+  }
+  
+  .subfooter ul li{
+    /* display: grid;
+    grid-template-columns: 3fr 3fr 3fr; */
+    text-decoration: none;
+  }
+  
+  ul p{
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+  }
+  .footer_ul li{
+    text-decoration: none;
+  }
+  
+
+  /* Add product */
+  .Add_products{
+    height: 100%;
+  }
+  .Addbutton{
+       margin: 10px;
+      background-color: skyblue;
+      width: 30%;
+      height: 8vh;
+      font-size: 20px;
+      cursor: pointer;
+  }
+  .invalid_input{
+    display: block;
+    color: red;
+    margin-top: -10px;
+    margin-left: -20px;
+  }
