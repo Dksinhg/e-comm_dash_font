@@ -3,6 +3,8 @@ import "./login.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
+const baseurl ="https://e-comm-dash-back.vercel.app/"
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,7 +22,7 @@ const Login = () => {
     event.preventDefault();
    
     axios
-      .post("http://localhost:5000/login", { email, password })
+      .post(`${baseurl}`, { email, password })
       .then((res) => {
         // console.log(res.data);
         navigate("/");
@@ -32,7 +34,7 @@ const Login = () => {
     // http://localhost:6000/login
 
     // console.log(email, password);
-    let result = await fetch("http://localhost:5000/login" ,{
+    let result = await fetch(`${baseurl}/login` ,{
        method:'post',
        body : JSON.stringify({email, password}),
        headers:{
